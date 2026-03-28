@@ -18,4 +18,6 @@ If a question can be answered by exploring the codebase, explore the codebase in
 
 If a question can be answered by examining existing components, styles, or design tokens in the project, examine them instead of asking me.
 
+If the user has not provided any personas or JTBD, asked them who is this feature for and what are their JTBD to be successful.
+
 For each question, provide your recommended answer.
