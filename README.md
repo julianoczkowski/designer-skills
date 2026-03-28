@@ -1,3 +1,16 @@
+<p align="left">
+  <img src="design_skills_hero.png" alt="Design Skills — Cursor, GitHub Copilot, Claude" />
+</p>
+
+<p align="left">
+  <a href="https://github.com/julianoczkowski/skills"><img src="https://img.shields.io/github/stars/julianoczkowski/skills?style=flat-square&logo=github" alt="GitHub stars" /></a>
+  <a href="https://github.com/julianoczkowski/skills"><img src="https://img.shields.io/github/last-commit/julianoczkowski/skills?style=flat-square&logo=github&label=last%20commit" alt="Last commit on GitHub" /></a>
+  <a href="#the-flow"><img src="https://img.shields.io/badge/skills-8-333?style=flat-square" alt="8 bundled skills" /></a>
+  <a href="https://github.com/vercel-labs/skills"><img src="https://img.shields.io/badge/Vercel-skills%20CLI-000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel skills CLI" /></a>
+  <a href="#installation"><img src="https://img.shields.io/badge/package-julianoczkowski%2Fdesigner--skills-0070f3?style=flat-square" alt="Install via npx skills add julianoczkowski/designer-skills" /></a>
+  <a href="#installation"><img src="https://img.shields.io/badge/agents-Claude%20Code%20%C2%B7%20Cursor%20%C2%B7%20Codex-6e7681?style=flat-square" alt="Claude Code, Cursor, Codex, and other agents" /></a>
+</p>
+
 # Designer Skills for Claude Code & Cursor
 
 A collection of agent skills for designers who prototype and build with AI coding tools. These skills encode design process so AI follows a structured path instead of producing random output.
@@ -15,7 +28,7 @@ The skills follow a deliberate sequence. You can use any skill individually, or 
 4. **`/design-tokens`** -- Generate a complete token system (colors, spacing, typography, motion) with light and dark mode palettes, based on the chosen aesthetic philosophy.
 5. **`/brief-to-tasks`** -- Break the brief into an ordered checklist of independently buildable vertical slices.
 6. **`/frontend-design`** -- Build with a named aesthetic philosophy. Mobile-first. Dark mode included. 8 design philosophies with concrete implementation parameters.
-7. **`/design-review`** -- Run a structured critique against the brief. Supports code review and screenshot-based review. Checks hierarchy, consistency, responsiveness, accessibility, dark mode, and aesthetic fidelity.
+7. **`/design-review`** -- Run a structured critique against the brief. Supports code review and screenshot-based review. Runs on request, not automatically. Use after you have something built.
 
 ## Key Principles
 
@@ -124,6 +137,5 @@ Each philosophy defines specific parameters for typography (font families, scale
 
 ## Credits
 
-- Grill-me concept by [Matt Pocock](https://github.com/mattpocock/skills)
 - Design tree concept from _The Design of Design_ by Frederick P. Brooks Jr.
 - Adapted for designers by [Julian Oczkowski](https://youtube.com/@aiforwork_app)
