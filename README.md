@@ -6,13 +6,7 @@ A collection of agent skills for designers who prototype and build with AI codin
 
 The skills follow a deliberate sequence. You can use any skill individually, or run **`/design-flow`** to be guided through the entire sequence automatically.
 
-```mermaid
-flowchart LR
-    DF(["/design-flow — orchestrates the full sequence"])
-    DF -.->|runs| GM
-    GM[grill-me] --> DB[design-brief] --> IA[information-architecture] --> DT[design-tokens] --> BT[brief-to-tasks] --> FE[frontend-design] --> DR[design-review]
-    DR -->|iterate| GM
-```
+![Designer skills flow: /design-flow orchestrates grill-me through design-review, with iterate back to grill-me](designer_skills_flow.svg)
 
 0. **`/design-flow`** -- Run the full workflow as a guided sequence. Orchestrates all skills in order, lets you skip phases, confirms between each step. Start here if you want the complete process.
 1. **`/grill-me`** -- Get interrogated about your plan until every design decision is resolved.
