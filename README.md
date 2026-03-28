@@ -23,10 +23,6 @@ npx skills add julianoczkowski/designer-skills
 
 The interactive CLI will walk you through which skills to install, which agents to target, and whether to install at project or global scope. Works with Claude Code, Cursor, Codex, Windsurf, and 40+ other agents.
 
-<p align="left">
-  <img src="vercel_skills_cli.png" alt="Vercel skills CLI: clone source, found skills, and interactive checklist to select skills to install" />
-</p>
-
 ## The Flow
 
 The skills follow a deliberate sequence. You can use any skill individually, or run **`/design-flow`** to be guided through the entire sequence automatically.
@@ -59,6 +55,24 @@ The `/design-tokens` skill generates both light and dark palettes. The `/fronten
 ### You Don't Need to Name a Style
 
 The aesthetic philosophies in `/frontend-design` are a menu, not a requirement. If you name one ("build this in a Dieter Rams style"), the AI follows those parameters. If you describe a vibe ("warm and clean"), it maps to the closest philosophy. If you say nothing, it picks one based on context and tells you which it chose.
+
+### Your Work Persists
+
+All design documents are saved to a `.design/` folder in your project, organized by feature. Running the flow for different features creates separate subfolders so nothing gets overwritten.
+
+```
+.design/
+├── onboarding-flow/
+│   ├── DESIGN_BRIEF.md
+│   ├── INFORMATION_ARCHITECTURE.md
+│   ├── TASKS.md
+│   └── DESIGN_REVIEW.md
+└── settings-page/
+    ├── DESIGN_BRIEF.md
+    └── TASKS.md
+```
+
+The folder name is derived from the feature being designed. Every skill in the flow reads from and writes to the same subfolder. If you return to a project later, the flow detects which features exist and where you left off.
 
 ## Aesthetic Philosophies (in `/frontend-design`)
 
