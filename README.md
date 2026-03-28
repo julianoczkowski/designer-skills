@@ -15,6 +15,18 @@
 
 A collection of agent skills for designers who prototype and build with AI coding tools. These skills encode design process so AI follows a structured path instead of producing random output.
 
+## Installation
+
+```bash
+npx skills add julianoczkowski/designer-skills
+```
+
+The interactive CLI will walk you through which skills to install, which agents to target, and whether to install at project or global scope. Works with Claude Code, Cursor, Codex, Windsurf, and 40+ other agents.
+
+<p align="left">
+  <img src="vercel_skills_cli.png" alt="Vercel skills CLI: clone source, found skills, and interactive checklist to select skills to install" />
+</p>
+
 ## The Flow
 
 The skills follow a deliberate sequence. You can use any skill individually, or run **`/design-flow`** to be guided through the entire sequence automatically.
@@ -47,78 +59,6 @@ The `/design-tokens` skill generates both light and dark palettes. The `/fronten
 ### You Don't Need to Name a Style
 
 The aesthetic philosophies in `/frontend-design` are a menu, not a requirement. If you name one ("build this in a Dieter Rams style"), the AI follows those parameters. If you describe a vibe ("warm and clean"), it maps to the closest philosophy. If you say nothing, it picks one based on context and tells you which it chose.
-
-## Installation
-
-### One command (recommended)
-
-Install all eight skills at once using the [Vercel skills CLI](https://github.com/vercel-labs/skills):
-
-```bash
-npx skills add julianoczkowski/designer-skills --all
-```
-
-This works with Claude Code, Cursor, Codex, Windsurf, and 40+ other agents.
-
-### Install a single skill
-
-```bash
-npx skills add julianoczkowski/designer-skills --skill design-flow
-npx skills add julianoczkowski/designer-skills --skill grill-me
-npx skills add julianoczkowski/designer-skills --skill design-brief
-npx skills add julianoczkowski/designer-skills --skill information-architecture
-npx skills add julianoczkowski/designer-skills --skill design-tokens
-npx skills add julianoczkowski/designer-skills --skill brief-to-tasks
-npx skills add julianoczkowski/designer-skills --skill frontend-design
-npx skills add julianoczkowski/designer-skills --skill design-review
-```
-
-### Install to a specific agent
-
-```bash
-npx skills add julianoczkowski/designer-skills --all -a claude-code
-npx skills add julianoczkowski/designer-skills --all -a cursor
-```
-
-### Manual installation
-
-Copy the skill folders into your project's `.claude/skills/` directory (Claude Code) or equivalent configuration for your tool.
-
-```
-your-project/
-├── .claude/
-│   └── skills/
-│       ├── design-flow/
-│       │   └── SKILL.md
-│       ├── grill-me/
-│       │   └── SKILL.md
-│       ├── design-brief/
-│       │   └── SKILL.md
-│       ├── information-architecture/
-│       │   └── SKILL.md
-│       ├── design-tokens/
-│       │   └── SKILL.md
-│       ├── brief-to-tasks/
-│       │   └── SKILL.md
-│       ├── frontend-design/
-│       │   └── SKILL.md
-│       └── design-review/
-│           └── SKILL.md
-```
-
-### Project vs Global Install
-
-By default, `npx skills add` installs to the **current project directory**. This means the skills live inside your project and only apply when you're working in that folder. The CLI puts them in the right place automatically: `.claude/skills/` for Claude Code, `.cursor/skills/` for Cursor, and the equivalent for other agents. Works on Mac, Windows, and Linux.
-
-```bash
-# Project-level (default) — run this from inside your project folder
-npx skills add julianoczkowski/designer-skills --all
-
-# Global/user-level — available in every project on your machine
-npx skills add julianoczkowski/designer-skills --all -g
-```
-
-**For teams:** project-level install is the better choice. If you commit the `.claude/skills/` folder to git, every collaborator gets the same skills automatically. Install once, push, and the whole team benefits. No individual setup required.
 
 ## Aesthetic Philosophies (in `/frontend-design`)
 
