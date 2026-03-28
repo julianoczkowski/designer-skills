@@ -24,7 +24,7 @@ This skill generates the foundational design tokens for a project. Run this afte
 
    If tokens already exist, **extend them** rather than replacing. Identify gaps (missing dark mode, incomplete spacing scale, no motion tokens) and fill those.
 
-2. **Read the brief.** Look for `DESIGN_BRIEF.md` in the project root. If a philosophy is named, use the parameters from `/frontend-design` to derive token values. If no brief exists, ask the user what direction they want.
+2. **Read the brief.** Look for a design brief at `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are working on. If a philosophy is named, use the parameters from `/frontend-design` to derive token values. If no brief exists, ask the user what direction they want.
 
 3. **Generate tokens** in the format that matches the project's tech stack:
    - Tailwind project → extend `tailwind.config.js` and write to `globals.css`

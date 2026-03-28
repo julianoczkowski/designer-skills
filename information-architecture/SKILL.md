@@ -14,7 +14,7 @@ This skill defines the structural skeleton of a product or site. It sits between
 
 ## Process
 
-1. If a design brief exists in the project (DESIGN_BRIEF.md), read it first. If not, ask the user what they are building and for whom.
+1. Look for an existing design brief at `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are working on. If no brief exists, ask the user what they are building and for whom.
 
 2. Explore the existing codebase to understand what structure already exists:
    - **Routing**: Next.js `app/` or `pages/` directory, React Router config, Vue Router, SvelteKit routes, or static HTML page files
@@ -34,7 +34,7 @@ This skill defines the structural skeleton of a product or site. It sits between
    - Are there distinct user types who need different entry points?
    - What is the one page/view where the user spends 80% of their time?
 
-4. Once you have a shared understanding, produce the IA document using the template below and save it as `INFORMATION_ARCHITECTURE.md` in the project root.
+4. Once you have a shared understanding, produce the IA document using the template below and save it as `INFORMATION_ARCHITECTURE.md` in the same `.design/<feature-slug>/` subfolder as the design brief.
 
 ## IA Document Template
 

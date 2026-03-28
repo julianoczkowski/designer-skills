@@ -38,7 +38,22 @@ This skill creates a design brief through structured conversation. You may skip 
    - What are the hard constraints? (devices, accessibility requirements, performance budgets, brand guidelines)
    - What content will this interface contain? What is placeholder vs. real?
 
-4. Once you have a complete understanding, write the brief using the template below and save it as `DESIGN_BRIEF.md` in the project root.
+4. Once you have a complete understanding, write the brief using the template below.
+
+## File Output
+
+Save the brief to `.design/<feature-slug>/DESIGN_BRIEF.md` where `<feature-slug>` is a short, lowercase, hyphenated name derived from the feature or page being designed (e.g., `onboarding-flow`, `settings-page`, `project-dashboard`).
+
+This folder structure ensures that running the design flow multiple times for different features does not overwrite previous work. All subsequent skills (information-architecture, design-tokens, brief-to-tasks, design-review) will read from and write to this same subfolder.
+
+Example:
+```
+.design/
+├── onboarding-flow/
+│   └── DESIGN_BRIEF.md
+└── settings-page/
+    └── DESIGN_BRIEF.md
+```
 
 ## Brief Template
 

@@ -14,7 +14,7 @@ This skill turns a design brief into an ordered, buildable task list. Each task 
 
 ## Process
 
-1. Read the design brief. Look for `DESIGN_BRIEF.md` in the project root. If an information architecture document exists (`INFORMATION_ARCHITECTURE.md`), read that too. If a tokens file exists, read that as well. If none exist, ask the user to describe what they are building.
+1. Read the design brief. Look for `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are working on. Also check for `INFORMATION_ARCHITECTURE.md` and a tokens file in the same subfolder. If none exist, ask the user to describe what they are building.
 
 2. Explore the existing codebase to understand what is already built. Scan specifically for:
    - **Component directories**: `components/`, `ui/`, `shared/` and list every component by name
@@ -36,14 +36,14 @@ This skill turns a design brief into an ordered, buildable task list. Each task 
    - **Visual priority**: the most prominent UI element early, so the user can validate the aesthetic direction before investing in details.
    - **Risk first**: the hardest or most uncertain piece early, so problems surface before everything else is built around them.
 
-5. Save the task list as `TASKS.md` in the project root.
+5. Save the task list as `TASKS.md` in the same `.design/<feature-slug>/` subfolder as the design brief.
 
 ## Task List Template
 
 ```markdown
 # Build Tasks: [Feature/Page Name]
 
-Generated from: DESIGN_BRIEF.md
+Generated from: .design/<feature-slug>/DESIGN_BRIEF.md
 Date: [date]
 
 ## Foundation

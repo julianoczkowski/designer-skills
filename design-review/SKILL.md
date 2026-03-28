@@ -15,7 +15,7 @@ This skill runs a structured design review of what has been built, measured agai
 
 ## Process
 
-1. **Read the brief.** Look for `DESIGN_BRIEF.md` in the project root. If it does not exist, ask the user what the intended design direction was.
+1. **Read the brief.** Look for `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are reviewing. If no brief exists, ask the user what the intended design direction was.
 
 2. **Explore the built code.** Examine every component, page, and style file that was created or modified. Scan specifically for:
    - All new or modified components and their relationship to pre-existing components
@@ -40,7 +40,7 @@ This skill runs a structured design review of what has been built, measured agai
    - **Should fix**: Inconsistencies, missing states, responsive issues.
    - **Could improve**: Polish, animation refinement, typography fine-tuning.
 
-6. Save the review as `DESIGN_REVIEW.md` in the project root, or present it directly if the user prefers.
+6. Save the review as `DESIGN_REVIEW.md` in the same `.design/<feature-slug>/` subfolder as the design brief, or present it directly if the user prefers.
 
 ## Review Checklist
 
@@ -114,7 +114,7 @@ This skill runs a structured design review of what has been built, measured agai
 ```markdown
 # Design Review: [Feature/Page Name]
 
-Reviewed against: DESIGN_BRIEF.md
+Reviewed against: .design/<feature-slug>/DESIGN_BRIEF.md
 Philosophy: [named philosophy]
 Date: [date]
 
