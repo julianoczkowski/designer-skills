@@ -15,6 +15,14 @@
 
 A collection of agent skills for designers who prototype and build with AI coding tools. These skills encode design process so AI follows a structured path instead of producing random output.
 
+<p align="left">
+  <a href="https://youtu.be/1pV7bvbaCFg?si=JtVWoBHsb-hrguho" title="Watch on YouTube">
+    <img src="https://img.youtube.com/vi/1pV7bvbaCFg/maxresdefault.jpg" alt="Designer Skills — walkthrough (YouTube)" width="100%" />
+  </a>
+</p>
+
+<p align="left"><strong>WATCH:</strong> <a href="https://youtu.be/1pV7bvbaCFg?si=JtVWoBHsb-hrguho">https://youtu.be/1pV7bvbaCFg?si=JtVWoBHsb-hrguho</a></p>
+
 ## Installation
 
 ```bash
