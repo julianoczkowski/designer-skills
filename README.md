@@ -3,8 +3,8 @@
 </p>
 
 <p align="left">
-  <a href="https://github.com/julianoczkowski/skills"><img src="https://img.shields.io/github/stars/julianoczkowski/skills?style=flat-square&logo=github" alt="GitHub stars" /></a>
-  <a href="https://github.com/julianoczkowski/skills"><img src="https://img.shields.io/github/last-commit/julianoczkowski/skills?style=flat-square&logo=github&label=last%20commit" alt="Last commit on GitHub" /></a>
+  <a href="https://github.com/julianoczkowski/designer-skills"><img src="https://img.shields.io/github/stars/julianoczkowski/designer-skills?style=flat-square&logo=github" alt="GitHub stars" /></a>
+  <a href="https://github.com/julianoczkowski/designer-skills"><img src="https://img.shields.io/github/last-commit/julianoczkowski/designer-skills?style=flat-square&logo=github&label=last%20commit" alt="Last commit on GitHub" /></a>
   <a href="#the-flow"><img src="https://img.shields.io/badge/skills-8-333?style=flat-square" alt="8 bundled skills" /></a>
   <a href="https://github.com/vercel-labs/skills"><img src="https://img.shields.io/badge/Vercel-skills%20CLI-000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel skills CLI" /></a>
   <a href="#installation"><img src="https://img.shields.io/badge/package-julianoczkowski%2Fdesigner--skills-0070f3?style=flat-square" alt="Install via npx skills add julianoczkowski/designer-skills" /></a>
@@ -30,6 +30,10 @@ npx skills add julianoczkowski/designer-skills
 ```
 
 The interactive CLI will walk you through which skills to install, which agents to target, and whether to install at project or global scope. Works with Claude Code, Cursor, Codex, Windsurf, and 40+ other agents.
+
+## Security
+
+These files are **instructions for local AI tools**. Treat them like any other project dependency: **review** skills before using them in sensitive or production contexts, and keep your editor, CLI, and API keys on trusted machines. We welcome **responsible disclosure** of anything in this repo that could cause agents to act unsafely; please use the process in [SECURITY.md](SECURITY.md) instead of public issues. Licensing and disclaimer: [LICENSE](LICENSE) (Apache 2.0).
 
 ## The Flow
 
